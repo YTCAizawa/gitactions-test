@@ -14,4 +14,14 @@ jobs:
         uses: microsoft/setup-msbuild@v1.0.2
 
       - run: dotnet build
-      - run: dotnet test
+      - run: dotnet test --logger:nunit results/TestResult.xml
+
+      - name: Upload Unit Test Results
+        if: ${{ always() }}
+
+        uses: actions/upload-artifact@v2
+
+        with:
+          name: Unit Test Results
+          path: results/*.xml
+	
