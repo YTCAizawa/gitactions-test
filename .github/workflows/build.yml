@@ -24,5 +24,5 @@ jobs:
 
         with:
           name: Unit Test Results
-          path: */TestResults/*.xml
+          path: TestResults/*.xml
 	
