@@ -24,4 +24,4 @@ jobs:
 
         with:
           name: Unit Test Results
-          path: **/test/telt.xml
+          path: ./test/telt.xml
