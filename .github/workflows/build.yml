@@ -38,6 +38,6 @@ jobs:
           path: artifacts
 
       - name: Publish Unit Test Results
-        uses: uses: EnricoMi/publish-unit-test-result-action/composite@v2
+        uses: EnricoMi/publish-unit-test-result-action/composite@v2
         with:
           nunit_files: artifacts/*.xml
